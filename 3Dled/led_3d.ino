@@ -17,7 +17,7 @@ void loop() {
   digitalWrite(led_1[2],HIGH);
   
   for (int x = standart_delay; x >= 0; x = x - 50) {
-      for (int b = 0; b <= sizeof(led_1)/sizeof(int); b++) {
+      for (int b = 0; b < sizeof(led_1)/sizeof(int); b++) {
         digitalWrite(led_1[b],LOW);
         digitalWrite(led_1[b],HIGH);
       }
